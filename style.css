@@ -4,42 +4,65 @@
 }
 */
 
-body {
-  margin: 0;
+html{
+    background-color: rgb(252, 252, 252);
 }
+
+body{
+    margin: 0;
+
+}
+
 
 .container{
     display: flex;
     flex-direction: row;
 }
 
-.left_container{
-
-}
 
 .right_container{
-    margin: 20vh 5vw 20vh 5vw;
+    margin: 20vh 0vw 5vh 0vw;
+
 }
 
 .right_container .top_text{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 900;
     width:30vw;
+    margin: 0px 0px 0px 60px;
 }
 
-.input_form{
+legend{
+padding-bottom: 15px;
+padding: 20px 0px 0px 50px;
+margin: 0px 0px 15px 0px;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 600;
+}
+
+fieldset{
+   border: none;;
+}
+
+.form_noButton{
     margin-top: 60px;
+    background-color: white; 
 }
 
+.input_form > div > form > fieldset > div > div > input {
+    width: 100%;
+    padding: 7px;
+}
 /* selects paired containers in input*/
-.input_form > form > fieldset > div{
+.input_form > div > form > fieldset > div{
 display: flex;
 gap: 65px;
 margin-bottom: 20px;
 }
 
 /*selects paired text and input for each*/
-.input_form > form > fieldset > div > div{
+.input_form > div >form > fieldset > div > div{
+padding-left: 50px;
 display: flex;
     gap: 2px;
     flex-direction: column;
@@ -60,8 +83,9 @@ display: flex;
 }
 
 /*create account button*/
-.input_form > form > button{
+button{
     margin-top: 40px;
+    margin-left: 65px;
     height: 50px;
     width: 210px;
     font-size: 1rem;
@@ -70,10 +94,11 @@ display: flex;
     background-color: rgb(27, 111, 27);
     border: none;
     border-radius: 10px;
-   box-shadow: 4px 5px 5px 1px rgb(166, 166, 166);
+    box-shadow: 4px 5px 5px 1px rgb(166, 166, 166);
+  
 }
 
-.input_form > form > button:hover{
+button:hover{
     box-shadow: 4px 5px 15px 1px black;
 }
 
