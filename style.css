@@ -1,0 +1,56 @@
+/*
+*{
+    border: red 1px solid;
+}
+*/
+
+body {
+  margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.left_container{
+
+}
+
+.right_container{
+    margin: 20vh 5vw 20vh 5vw;
+}
+
+.input_form{
+    margin-top: 60px;
+}
+
+/* selects paired containers in input*/
+.input_form > fieldset > div{
+display: flex;
+gap: 65px;
+margin-bottom: 20px;
+}
+
+/*selects paired text and input for each*/
+.input_form > fieldset > div > div{
+display: flex;
+    gap: 2px;
+    flex-direction: column;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* first name and last name*/
+
+
+/*email and phone number*/
+
+
+/* Password and confirm password*/
+
+
+
+#plant_img{
+    height: 100vh;
+    width:33vw;
+}
